@@ -3,14 +3,15 @@
 FROM java:openjdk-7-jre
 MAINTAINER hangxin1940 <hangxin1940@gmail.com>
 
-RUN wget -q http://github.com/hangxin1940/elasticsearch-cn-out-of-box/archive/v1.6.0.zip -O - | unzip v1.6.0.zip && \
+RUN wget http://github.com/hangxin1940/elasticsearch-cn-out-of-box/archive/v1.6.0.zip && unzip v1.6.0.zip && \
     mv /elasticsearch-cn-out-of-box-1.6.0 /elasticsearch && \
     rm /elasticsearch/lib/sigar/*freebsd* && \
     rm /elasticsearch/lib/sigar/*macosx* && \
     rm /elasticsearch/lib/sigar/*solaris* && \
     rm /elasticsearch/lib/sigar/*winnt* && \
     rm /elasticsearch/bin/*.exe && \
-    rm /elasticsearch/bin/service
+    rm /elasticsearch/bin/service && \
+    rm v1.6.0.zip
 
 RUN mkdir /data /logs
 
