@@ -8,13 +8,13 @@ java:openjdk-7-jre
 
 `docker pull hangxin1940/docker-elasticsearch-cn-out-of-box`
 
-## 快速部署
+### 快速部署
 
 均使用默认配置:
 
     docker run -d -p 9200:9200 -p 9300:9300 hangxin1940/docker-elasticsearch-cn-out-of-box
 
-## 集群部署
+### 集群部署
 
 运行一个集群(3个节点):
 
@@ -22,7 +22,7 @@ java:openjdk-7-jre
     docker run -d -p 9201:9200 -p 9301:9300 hangxin1940/docker-elasticsearch-cn-out-of-box
     docker run -d -p 9202:9200 -p 9302:9300 hangxin1940/docker-elasticsearch-cn-out-of-box
 
-## 配置
+### 配置
 
 在 `docker run` 后面加上环境变量参数 (`-e`)来配置参数,如下:
 
