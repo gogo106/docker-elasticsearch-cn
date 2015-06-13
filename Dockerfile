@@ -1,5 +1,5 @@
-# docker-elasticsearch-cn-out-of-box
-# docker pull hangxin1940/docker-elasticsearch-cn-out-of-box
+# docker-elasticsearch-cn
+# docker pull hangxin1940/docker-elasticsearch-cn:v1.6.0
 FROM java:openjdk-7-jre
 MAINTAINER hangxin1940 <hangxin1940@gmail.com>
 
