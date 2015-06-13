@@ -18,7 +18,7 @@ VOLUME ["/data", "/logs"]
 
 ENV ES_HOME /elasticsearch
 
-ADD start /elasticsearch/bin/start
+ADD docker-start /elasticsearch/bin/docker-start
 
 EXPOSE 9200 9300
 CMD ["/elasticsearch/bin/docker-start"]
