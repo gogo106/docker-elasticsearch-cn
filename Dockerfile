@@ -5,10 +5,6 @@ MAINTAINER hangxin1940 <hangxin1940@gmail.com>
 
 RUN wget -q http://github.com/hangxin1940/elasticsearch-cn-out-of-box/archive/v2.1.1.zip && unzip -qq v2.1.1zip && \
     mv /elasticsearch-cn-out-of-box-2.1.1 /elasticsearch && \
-    rm /elasticsearch/lib/sigar/*freebsd* && \
-    rm /elasticsearch/lib/sigar/*macosx* && \
-    rm /elasticsearch/lib/sigar/*solaris* && \
-    rm /elasticsearch/lib/sigar/*winnt* && \
     rm /elasticsearch/bin/*.exe && \
     rm -rf /elasticsearch/bin/service && \
     rm v2.1.1.zip
